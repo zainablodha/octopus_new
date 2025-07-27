@@ -1,0 +1,43 @@
+<section class="home max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+  <div class="home-left flex-1 flex flex-col justify-center">
+    <h1 class="text-2xl md:text-4xl font-bold mb-4">Because you aren’t paid to second guess.</h1>
+    <p class="mb-6 text-base md:text-lg">
+      With 1,000+ vetted solutions, Octopus helps you
+      <strong>discover, compare and review</strong> tools that fit your people strategy.
+    </p>
+    <div class="search-box flex gap-2 mb-4">
+      <input type="text" placeholder="Search for a product, service, consultant"
+        class="border rounded px-3 py-2 w-full max-w-md" />
+      <button class="bg-[#2d0c5e] text-white px-4 py-2 rounded">➜</button>
+    </div>
+    <button class="search-now bg-[#ff7a21] text-white px-6 py-2 rounded mb-6 w-full max-w-xs">Search Now</button>
+    <div class="categories">
+      <h4 class="font-semibold mb-2">POPULAR CATEGORIES</h4>
+      <div class="tags flex flex-wrap gap-2">
+        <span *ngFor="let category of categories"
+          class="bg-[#f4f3ff] text-[#2d0c5e] px-3 py-1 rounded text-sm">{{ category }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="home-right flex-1 flex flex-col items-center">
+    <img src="assets/images/main-banner.svg" alt="home Image"
+      class="home-image w-full max-w-md rounded mb-4 object-cover" />
+    <div class="overlay-box bg-white bg-opacity-80 rounded p-4 w-full max-w-md">
+      <h5 class="font-semibold text-lg mb-2">{{text}}</h5>
+      <p class="mb-2 text-sm">Be a part of over 1000+ and growing solutions and maximize visibility with the right audience.</p>
+      <div class="dots flex gap-1">
+        <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+        <span class="w-2 h-2 rounded-full bg-[#2d0c5e]"></span>
+        <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<app-hr-tech-shortcut></app-hr-tech-shortcut>
+<app-explore-octopus></app-explore-octopus>
+<app-showcase></app-showcase>
+<app-why-octopus></app-why-octopus>
+<app-popular-categories></app-popular-categories>
+<app-footer></app-footer>

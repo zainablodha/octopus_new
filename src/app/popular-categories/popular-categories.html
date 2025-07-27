@@ -1,0 +1,12 @@
+<section class="max-w-7xl mx-auto py-12">
+  <h2 class="text-2xl font-bold mb-8">More ways HR Professionals use solutions.</h2>
+  <div class="border-b border-dashed border-gray-300 mb-8"></div>
+  <div *ngFor="let category of categories">
+    <app-category-card
+      [title]="category.title"
+      [description]="category.description"
+      [viewMoreLink]="category.viewMoreLink"
+      [items]="category.items">
+    </app-category-card>
+  </div>
+</section>

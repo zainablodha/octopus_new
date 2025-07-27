@@ -1,0 +1,11 @@
+.explore-section {
+  padding: 2rem;
+  background: #f4f3ff;
+  border-radius: 1rem;
+}
+.category-block {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(44,12,94,0.05);
+}

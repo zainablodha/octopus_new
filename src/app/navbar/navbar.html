@@ -1,0 +1,47 @@
+<nav class="bg-white px-4 py-3 shadow">
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <img src="assets/logos/octopus.svg" alt="Octopus Logo" class="h-8 w-auto" />
+
+    <!-- Profile icon and Hamburger menu (mobile only) -->
+    <div class="flex items-center md:hidden gap-2">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#ff7a21]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+          <path d="M4 20c0-4 16-4 16 0" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </button>
+      <button (click)="showMenu = !showMenu" aria-label="Toggle Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#23210c]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop menu -->
+    <ul class="hidden md:flex items-center gap-8 ml-12 flex-1">
+      <li *ngFor="let item of menuItems">
+        <a href="#" class="text-[#23210c] hover:text-[#2d0c5e] font-semibold">{{ item }}</a>
+      </li>
+    </ul>
+    <div class="hidden md:flex gap-2">
+      <button class="bg-[#2d0c5e] text-white px-6 py-2 rounded font-semibold">Get Listed</button>
+      <button class="bg-[#ff7a21] text-white px-6 py-2 rounded font-semibold">Login / Signup</button>
+    </div>
+  </div>
+
+  <!-- Mobile menu dropdown -->
+  <div *ngIf="showMenu" class="md:hidden mt-4">
+    <ul class="flex flex-col gap-2">
+      <li *ngFor="let item of menuItems">
+        <a href="#" class="block py-2 px-4 text-[#23210c] hover:text-[#2d0c5e] font-semibold">{{ item }}</a>
+      </li>
+    </ul>
+    <div class="flex flex-col gap-2 mt-4">
+      <button class="bg-[#2d0c5e] text-white px-6 py-2 rounded font-semibold">Get Listed</button>
+      <button class="bg-[#ff7a21] text-white px-6 py-2 rounded font-semibold">Login / Signup</button>
+    </div>
+  </div>
+  <div class="border-b border-gray-200 mt-4"></div>
+</nav>
