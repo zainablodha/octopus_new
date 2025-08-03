@@ -1,23 +1,53 @@
 <section class="bg-[#f4f3ff] py-12 border border-[#c7d4ff] rounded-md">
   <div class="max-w-7xl mx-auto px-4">
-    <p class="text-sm text-gray-600 uppercase font-medium">Designed for the ones who decide</p>
-    <h2 class="text-3xl font-bold text-[#2d0c5e] mt-2 mb-4">
-      Your Shortcut to Smarter HR Tech Decisions
-    </h2>
-    <p class="text-gray-600 max-w-3xl mb-6">
-      For CHROs, Talent Leaders, and HR strategists—Octopus reduces decision fatigue and puts you in control.
-    </p>
-
-    <div class="flex flex-wrap gap-4 mb-8">
-      <button class="bg-[#2d0c5e] text-white px-5 py-2 rounded-md hover:bg-[#442580] transition">
-        Explore Products →
+    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2">
+      <div>
+        <p class="text-xs text-[#23210c] uppercase font-semibold tracking-wide mb-2">Designed for the ones who decide</p>
+        <h2 class="text-4xl font-bold text-[#2d0c5e] mb-2 leading-tight">
+          Your Shortcut to Smarter HR Tech Decisions
+        </h2>
+        <p class="text-[#23210c] text-base max-w-2xl mb-4">
+          For CHROs, Talent Leaders, and HR strategists—Octopus reduces decision fatigue and puts you in control.
+        </p>
+      </div>
+      <div class="hidden lg:flex gap-8">
+        <button class="bg-transparent text-[#23210c] font-semibold flex items-center gap-1 hover:underline">
+          EXPLORE PRODUCTS
+          <span class="text-lg">
+            <!-- Exported SVG arrow -->
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="inline-block align-middle">
+              <path d="M6 4l5 5-5 5" stroke="#23210c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <button class="bg-transparent text-[#23210c] font-semibold flex items-center gap-1 hover:underline">
+          EXPLORE SERVICES
+          <span class="text-lg">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="inline-block align-middle">
+              <path d="M6 4l5 5-5 5" stroke="#23210c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="flex gap-8 mb-8 lg:hidden">
+      <button class="bg-transparent text-[#23210c] font-semibold flex items-center gap-1 hover:underline">
+        EXPLORE PRODUCTS
+        <span class="text-lg">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="inline-block align-middle">
+            <path d="M6 4l5 5-5 5" stroke="#23210c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
       </button>
-      <button
-        class="bg-white border border-[#2d0c5e] text-[#2d0c5e] px-5 py-2 rounded-md hover:bg-[#f0ebff] transition">
-        Explore Services →
+      <button class="bg-transparent text-[#23210c] font-semibold flex items-center gap-1 hover:underline">
+        EXPLORE SERVICES
+        <span class="text-lg">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="inline-block align-middle">
+            <path d="M6 4l5 5-5 5" stroke="#23210c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
       </button>
     </div>
-
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       <app-card imgSrc="assets/images/card1.svg" alt="Precision Matching" title="Precision Matching"
         description="Filter by goal, company size, pricing or integration requirement"></app-card>
@@ -25,8 +55,10 @@
         description="Save your favorites, build comparisons and collaborate"></app-card>
       <app-card imgSrc="assets/images/card3.svg" alt="Standardised Data" title="Standardised Data"
         description="See standardized walkthroughs, unbiased data across tools."></app-card>
-      <app-card imgSrc="assets/images/card4.svg" alt="Chat with Octo!" title="Chat with Octo!"
-        description="Our proprietary AI assistant ready to help you with your needs"></app-card>
+      <app-card
+        imgSrc="assets/images/card4.svg"
+        alt="Chat with Octo!"
+        title="Chat with Octo!"
+        description="Our proprietary AI assistant ready to help you with your needs"
+        ></app-card>
     </div>
-  </div>
-</section>

@@ -1,7 +1,8 @@
-<div class="bg-white rounded-md shadow-md overflow-hidden">
-  <img [src]="imgSrc" [alt]="alt" class="w-full h-48 object-cover" />
-  <div class="p-4">
-    <h3 class="font-semibold text-lg">{{ title }}</h3>
-    <p class="text-sm text-gray-600">{{ description }}</p>
+<div class="bg-white rounded-md shadow-md overflow-hidden relative group w-[298px] h-[466px] max-w-full max-h-full">
+  <img [src]="imgSrc" [alt]="alt" class="w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+  <div class="absolute bottom-0 left-0 p-4 w-full">
+    <h3 class="font-semibold text-white text-lg mb-1">{{ title }}</h3>
+    <p class="text-sm text-gray-100">{{ description }}</p>
   </div>
 </div>

@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar';
-import { HomeComponent } from './home/home';
+import { RouterOutlet } from "@angular/router";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, HomeComponent], 
+  imports: [RouterOutlet], 
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-export class App {
+export class AppComponent {
   title = 'octopus-app';
 }

@@ -1,0 +1,11 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+.animate-dissolve {
+  animation: dissolve 300ms ease-out;
+}
+@keyframes dissolve {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

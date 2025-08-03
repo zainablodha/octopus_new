@@ -6,10 +6,13 @@ import { ShowcaseComponent } from '../showcase/showcase';
 import { WhyOctopusComponent } from '../why-octopus/why-octopus';
 import { PopularCategoriesComponent } from '../popular-categories/popular-categories';
 import { FooterComponent } from '../footer/footer';
+import { GuideTrayComponent } from '../guide-tray/guide-tray';
+import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from '../navbar/navbar';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, HrTechShortcut, ExploreOctopus, ShowcaseComponent, WhyOctopusComponent, PopularCategoriesComponent, FooterComponent],
+  imports: [CommonModule, HrTechShortcut, ExploreOctopus, ShowcaseComponent, WhyOctopusComponent, PopularCategoriesComponent, FooterComponent, GuideTrayComponent, NavbarComponent],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
