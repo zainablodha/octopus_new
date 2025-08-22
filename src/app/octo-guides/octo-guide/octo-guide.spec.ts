@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OctoGuide } from './octo-guide';
+import { OctoGuideComponent } from './octo-guide';
 
-describe('OctoGuide', () => {
-  let component: OctoGuide;
-  let fixture: ComponentFixture<OctoGuide>;
+describe('OctoGuide1', () => {
+  let component: OctoGuideComponent;
+  let fixture: ComponentFixture<OctoGuideComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OctoGuide]
+      imports: [OctoGuideComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OctoGuide);
+    fixture = TestBed.createComponent(OctoGuideComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

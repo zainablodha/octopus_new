@@ -1,0 +1,28 @@
+<app-octo-guide-card [closeIcon]="closeIcon" (onClose)="closeGuide()">
+  <h1 class="font-semibold text-[#23210c] text-base md:text-lg mb-2 mt-4">Help Octo Find Your Best Fit</h1>
+  <p class="text-[#23210c] mb-6 max-w-xl">
+    Make confident decisions faster — just follow a few guided steps.
+  </p>
+  <ul class="mb-8 space-y-4 text-[#23210c]">
+    <li class="flex items-center gap-3">
+      <img src="assets/icons/Icon - Octo guide Slider.svg" alt="" class="w-6 h-6" />
+      <span>Set preferences based on what you need.</span>
+    </li>
+    <li class="flex items-center gap-3">
+      <img src="assets/icons/Icon - Octo guide Puzzle.svg" alt="" class="w-6 h-6" />
+      <span>Let Octo refine your options to find the best fit.</span>
+    </li>
+    <li class="flex items-center gap-3">
+      <img src="assets/icons/Icon - Octo guide Wavy Check.svg" alt="" class="w-6 h-6" />
+      <span>Get recommendations that actually fit your goals.</span>
+    </li>
+  </ul>
+  <button
+    class="bg-[#FD6E1D] text-white px-6 py-2 rounded font-semibold inline-flex items-center gap-2 shadow-none border border-[1px] border-[#98A2B380]"
+    (click)="startGuide()">
+    <span>Let Octo Guide You!</span>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+</app-octo-guide-card>

@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts}",  // important: tells Tailwind to scan your files
   ],
   theme: {
-    extend: {},  // you can customize colors etc here
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], // Set Poppins as default sans
+      },
+    },  // you can customize colors etc here
   },
   plugins: [],
 };
