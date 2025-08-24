@@ -47,10 +47,20 @@
             </button>
         </div>
 
+        <!-- Textbox for 'Something else' -->
+        <div *ngIf="selectedValues.includes('other')" class="w-full max-w-2xl mb-8">
+            <textarea
+                [(ngModel)]="otherPriority"
+                rows="3"
+                placeholder="Write your priority here"
+                class="w-full border border-[#E5E7EB] rounded-[7px] px-4 py-3 text-base focus:outline-none focus:border-[#3E2083] resize-none"
+            ></textarea>
+        </div>
+
         <!-- Continue Button -->
         <button
-            class="bg-[#FD6E1D] text-white px-8 py-3 rounded-lg font-semibold text-lg flex items-center gap-2">
-            <!-- style="box-shadow: 0px 4px 24px 0px #FD6E1D1A;" -->
+            class="bg-[#FD6E1D] text-white px-8 py-3 rounded-lg font-semibold text-lg flex items-center gap-2"
+            (click)="handleNext()">
             Continue
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />

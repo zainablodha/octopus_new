@@ -1,15 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { OctoGuideCardComponent } from '../octo-guide-card/octo-guide-card';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-octo-guide-2',
   standalone: true,
-  imports: [CommonModule, OctoGuideCardComponent],
+  imports: [CommonModule, FormsModule, OctoGuideCardComponent],
   templateUrl: './octo-guide-2.html',
   styleUrl: './octo-guide-2.css'
 })
 export class OctoGuide2Component {
+
+  constructor(private router: Router) {}
   step = 2;
   totalSteps = 4;
   question = "What's your current top HR priority?";
@@ -26,6 +30,8 @@ export class OctoGuide2Component {
 
   selectedValues: string[] = [];
 
+  otherPriority: string = '';
+
 toggleOption(value: string) {
   const index = this.selectedValues.indexOf(value);
   if (index > -1) {
@@ -34,4 +40,9 @@ toggleOption(value: string) {
     this.selectedValues.push(value);
   }
 }
+
+  handleNext() {
+    this.router.navigate(['/octo-guide-3']);
+  }
+
 }
